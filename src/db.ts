@@ -1,6 +1,6 @@
 import Database from "better-sqlite3";
 
-export const db = new Database("world_lore.db");
+export const db: Database.Database = new Database("world_lore.db");
 
 db.exec(`
     CREATE TABLE IF NOT EXISTS entities (
